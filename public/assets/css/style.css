@@ -1,11 +1,30 @@
+body {
+  background-color: goldenrod;
+}
+
+.jumbotron {
+  background-image: url('./images/bacon-burger.png');
+  background-repeat: no-repeat;
+  background-size: 180px 175px;
+  background-position: center;
+  background-color: goldenrod;
+  margin-top: 50px;
+}
+
 h1 {
-  /* text-align: center; */
+  text-align: center;
+  font-family: 'Titan One', cursive;
   color: red;
 }
 
 li {
   padding: 5px;
   margin: 5px;
+}
+
+p {
+  text-decoration: underline;
+  font-size: 25px;
 }
 
 .label {
@@ -20,4 +39,8 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+#not-eaten, #burger-eaten {
+  text-align: center;
 }
