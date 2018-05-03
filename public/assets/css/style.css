@@ -1,7 +1,11 @@
+h1 {
+  /* text-align: center; */
+  color: red;
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
 }
 
 .label {

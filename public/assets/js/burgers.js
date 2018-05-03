@@ -27,7 +27,6 @@ $(function() {
 
     var newBurger = {
       burger_name: $("#bg").val().trim(),
-      // devoured: $("[name=sleepy]:checked").val().trim()
     };
 
     // Send the POST request.
@@ -42,6 +41,4 @@ $(function() {
       }
     );
   });
-
-
 });
