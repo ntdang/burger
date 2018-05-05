@@ -1,20 +1,16 @@
 body {
-  background-color: goldenrod;
-}
-
-.jumbotron {
+  background-color: black;
   background-image: url('./images/bacon-burger.png');
   background-repeat: no-repeat;
-  background-size: 180px 175px;
-  background-position: center;
-  background-color: goldenrod;
-  margin-top: 50px;
+  background-size: 450px 450px;
 }
+
 
 h1 {
   text-align: center;
   font-family: 'Titan One', cursive;
-  color: red;
+  color: azure;
+  font-size: 70px;
 }
 
 li {
@@ -22,13 +18,36 @@ li {
   margin: 5px;
 }
 
-p {
+h2 {
+  font-family: 'Handlee', cursive;
   text-decoration: underline;
-  font-size: 25px;
+  color: azure;
+}
+
+p, .label {
+  font-family: 'Handlee', cursive;
+  font-size: 20px;
+  color: azure;
+}
+
+.container {
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+.footer {
+  text-align: right;
+  background-color: azure;
+  font-family: 'Handlee', cursive;
+  font-size: 10px;
 }
 
 .label {
   font-weight: bold;
+}
+
+.center {
+  text-align: center;
 }
 
 .create-update-form {
@@ -43,4 +62,10 @@ p {
 
 #not-eaten, #burger-eaten {
   text-align: center;
+}
+
+#submit {
+  font-family: 'Handlee', cursive;
+  color: black;
+  font-size: 20px;
 }

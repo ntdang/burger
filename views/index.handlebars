@@ -1,29 +1,29 @@
 <div class='container'>
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-    </div>
-  </div>
-
   <h1>Nom Nom Burgers!</h1>
   <br>
   <div class='row'>
     <div class='col-sm-6' id='not-eaten'>
-      <p>Pick One!</p>
-        {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured=true}} {{/unless}} {{/each}}
+      <h2>Pick One!</h2>
+      {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devoured=true}} {{/unless}} {{/each}}
     </div>
 
     <div class='col-sm-6' id='burger-eaten'>
-      <p>Already Eaten!</p>
-        {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured=false}} {{/if}} {{/each}}
+      <h2>Already Eaten!</h2>
+      {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devoured=false}} {{/if}} {{/each}}
     </div>
   </div>
   <br>
-  <form class="create-form">
-    <div class="form-group col-sm-3">
-      <label for="burgerTextarea1">Enter a burger you want to eat!</label>
-      <textarea class="form-control" id="bg" rows="2"></textarea>
-    </div>
+  <div class='center'>
+    <form class="create-form">
+      <div class="form-group">
+        <label for="bg" class='label'>Burger Name:</label>
+        <input type="text" id="bg" name="name" class="box">
+      </div>
 
-    <button type="submit">Add Burger</button>
-  </form>
+      <button id='submit' class="btn btn-light no-pad" type="submit">Add</button>
+    </form>
+  </div>
 </div>
+  <nav class="navbar fixed-bottom footer">
+    <a class="navbar-brand">&#169 Copyright 2018 ND</a>
+  </nav>
